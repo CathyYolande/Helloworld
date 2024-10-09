@@ -6,6 +6,11 @@ pipeline {
          echo "Hello World"
        }
     }
+      stage("build"){
+        steps{
+          sh 'maven clean'
+        }
+      }
     
     }
 
